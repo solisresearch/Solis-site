@@ -1,159 +1,172 @@
+<!-- ===================== SOLIS RESEARCH (STRATE LABS STYLE STRUCTURE - UNIQUE DESIGN) ===================== -->
+
+<!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Products - Solis Research</title>
+<title>Solis Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {margin:0;font-family:Arial;background:white;color:black;}
-nav {display:flex;justify-content:space-between;padding:20px;background:white;border-bottom:1px solid #ddd;}
-nav a {color:black;margin:0 15px;text-decoration:none;font-weight:500;}
+body{margin:0;font-family:Arial;background:white;color:#111}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid #eee}
+nav a{margin:0 15px;text-decoration:none;color:#111;font-weight:500}
 
-.logo {display:flex;align-items:center;gap:10px;}
-.logo svg {width:32px;height:32px;}
+.logo{display:flex;align-items:center;gap:10px}
 
-.grid {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-padding:40px;
-}
+.hero{padding:120px 20px;text-align:center}
+.hero h1{font-size:48px;color:#0057ff;margin-bottom:10px}
+.hero p{color:#555}
+.btn{background:#0057ff;color:white;padding:12px 28px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:20px}
 
-.card {
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-border:1px solid #eee;
-}
+.section{padding:60px 40px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+.card{padding:25px;border:1px solid #eee;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
 
-.card h3 {color:#0077ff;margin-bottom:10px;}
-.price {font-weight:bold;margin:10px 0;}
-.small {font-size:12px;color:#666;}
-
-.disclaimer {
-text-align:center;
-padding:20px;
-font-size:12px;
-color:#555;
-border-top:1px solid #ddd;
-}
+footer{padding:30px;text-align:center;border-top:1px solid #eee;margin-top:60px;font-size:12px;color:#666}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <div class="logo">
-    <svg viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="20" stroke="#0077ff" stroke-width="3" fill="none"/>
-      <line x1="50" y1="10" x2="50" y2="30" stroke="#0077ff"/>
-      <line x1="50" y1="70" x2="50" y2="90" stroke="#0077ff"/>
-      <line x1="10" y1="50" x2="30" y2="50" stroke="#0077ff"/>
-      <line x1="70" y1="50" x2="90" y2="50" stroke="#0077ff"/>
-    </svg>
-    <strong>Solis Research</strong>
-  </div>
+<div class="logo">
+<!-- Clean scientific sun + atom hybrid -->
+<svg width="34" height="34" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="18" stroke="#0057ff" stroke-width="3" fill="none"/>
+<circle cx="50" cy="50" r="4" fill="#0057ff"/>
+<ellipse cx="50" cy="50" rx="35" ry="15" stroke="#0057ff" fill="none"/>
+<ellipse cx="50" cy="50" rx="15" ry="35" stroke="#0057ff" fill="none"/>
+</svg>
+<strong>Solis Research</strong>
+</div>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<div>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+</div>
 </nav>
 
-<section class="grid">
+<section class="hero">
+<h1>Next Generation Research Compounds</h1>
+<p>Precision synthesized peptides for advanced laboratory research.</p>
+<a class="btn" href="products.html">Explore Products</a>
 
-<div class="card">
-<h3>Retatrutide</h3>
-<div class="price">$120 – $300</div>
-<p class="small">Research use only</p>
+<div style="margin-top:50px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+  <img src="https://images.unsplash.com/photo-1581091012184-5c1d5a9b4f63" style="width:220px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+  <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074" style="width:220px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+  <img src="https://images.unsplash.com/photo-1579165466991-467135ad3110" style="width:220px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
 </div>
-
-<div class="card">
-<h3>BPC-157</h3>
-<div class="price">$60 – $150</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>TB-500</h3>
-<div class="price">$80 – $180</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>BAC Water</h3>
-<div class="price">$10 – $25</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>GHK-Cu</h3>
-<div class="price">$50 – $120</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>HCG</h3>
-<div class="price">$40 – $120</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>Glow Blend</h3>
-<div class="price">$80 – $160</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>Tesamorelin</h3>
-<div class="price">$120 – $250</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>NAD+</h3>
-<div class="price">$90 – $200</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>CJC-1295</h3>
-<div class="price">$90 – $180</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>Semax</h3>
-<div class="price">$50 – $120</div>
-<p class="small">Research use only</p>
-</div>
-
-<div class="card">
-<h3>MT-2</h3>
-<div class="price">$40 – $100</div>
-<p class="small">Research use only</p>
-</div>
-
 </section>
 
-<div class="disclaimer">
-ALL PRODUCTS ARE FOR LABORATORY RESEARCH PURPOSES ONLY. NOT FOR HUMAN OR ANIMAL CONSUMPTION.
+<section class="section">
+<h2>Why Solis</h2>
+<div class="cards">
+<div class="card">High Purity Standards</div>
+<div class="card">3rd Party Tested</div>
+<div class="card">Fast US Shipping</div>
+<div class="card">Secure Ordering</div>
 </div>
+</section>
+
+<footer>
+ALL PRODUCTS ARE FOR RESEARCH PURPOSES ONLY. NOT FOR HUMAN OR ANIMAL CONSUMPTION.
+</footer>
 
 </body>
 </html>
 
 
+<!-- ===================== products.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Arial;background:white}
+nav{display:flex;justify-content:space-between;padding:20px 40px;border-bottom:1px solid #eee}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;padding:50px}
+.card{border:1px solid #eee;padding:25px;border-radius:12px;transition:.2s}
+.card:hover{box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+button{background:#0057ff;color:white;border:none;padding:10px 15px;border-radius:6px;cursor:pointer}
+.price{font-weight:bold;margin:10px 0;color:#0057ff}
+</style>
+
+<script>
+function addToCart(name,price){
+let cart=JSON.parse(localStorage.getItem('cart'))||[];
+cart.push({name,price});
+localStorage.setItem('cart',JSON.stringify(cart));
+alert(name+' added to cart');
+}
+</script>
+</head>
+
+<body>
+<nav>
+<div><strong>Solis Research</strong></div>
+<div>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<section class="grid">
+<div class="card"><h3>Retatrutide</h3><div class="price">$180</div><button onclick="addToCart('Retatrutide',180)">Add to Cart</button></div>
+<div class="card"><h3>BPC-157</h3><div class="price">$90</div><button onclick="addToCart('BPC-157',90)">Add to Cart</button></div>
+<div class="card"><h3>TB-500</h3><div class="price">$120</div><button onclick="addToCart('TB-500',120)">Add to Cart</button></div>
+<div class="card"><h3>NAD+</h3><div class="price">$150</div><button onclick="addToCart('NAD+',150)">Add to Cart</button></div>
+<div class="card"><h3>CJC-1295</h3><div class="price">$140</div><button onclick="addToCart('CJC-1295',140)">Add to Cart</button></div>
+<div class="card"><h3>Semax</h3><div class="price">$90</div><button onclick="addToCart('Semax',90)">Add to Cart</button></div>
+</section>
+
+</body>
+</html>
 
 
+<!-- ===================== cart.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<script>
+function loadCart(){
+let cart=JSON.parse(localStorage.getItem('cart'))||[];
+let total=0;
+let html='';
+cart.forEach(i=>{html+=`<p>${i.name} - $${i.price}</p>`;total+=i.price});
+document.getElementById('cart').innerHTML=html;
+document.getElementById('total').innerText='Total: $'+total;
+}
+</script>
+</head>
+<body onload="loadCart()">
+<h1>Cart</h1>
+<div id="cart"></div>
+<h2 id="total"></h2>
+<button onclick="alert('Email sales@solisresearch.com to complete order')">Checkout</button>
+</body>
+</html>
 
 
-
-    
-
-
-
-
+<!-- ===================== contact.html ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+</head>
+<body>
+<h1>Contact</h1>
+<p>sales@solisresearch.com</p>
+</body>
+</html>
