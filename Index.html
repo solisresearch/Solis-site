@@ -1,4 +1,4 @@
-<!-- ===================== SOLIS RESEARCH FINAL UI UPGRADE ===================== -->
+<!-- ===================== SOLIS RESEARCH FINAL (RAT HERO FIXED) ===================== -->
 
 <!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
@@ -33,10 +33,7 @@ font-size:20px;
 color:#0057ff;
 }
 
-.menu-icon{
-cursor:pointer;
-font-size:24px;
-}
+.menu-icon{cursor:pointer;font-size:24px}
 
 .dropdown{
 display:none;
@@ -58,11 +55,7 @@ color:#111;
 
 .dropdown a:hover{background:#f5f5f5}
 
-.hero{
-padding:100px 20px;
-text-align:center;
-}
-
+.hero{padding:100px 20px;text-align:center}
 .hero h1{font-size:44px;color:#0057ff}
 
 .btn{
@@ -75,18 +68,18 @@ display:inline-block;
 margin-top:20px;
 }
 
-.images{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:50px;
+.rat{
+width:320px;
+border-radius:12px;
+animation:float 3s ease-in-out infinite;
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+margin-top:40px;
 }
 
-.images img{
-width:240px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-12px)}
+100%{transform:translateY(0)}
 }
 
 </style>
@@ -108,9 +101,7 @@ window.location.href='cart.html';
 
 <nav>
 <div class="cart" onclick="goToCart()">🛒 Cart</div>
-
 <div class="logo">Solis Research</div>
-
 <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
 <div id="menu" class="dropdown">
@@ -126,25 +117,9 @@ window.location.href='cart.html';
 <p>Precision synthesized peptides for advanced laboratory research.</p>
 <a class="btn" href="products.html">Explore Products</a>
 
-<div class="images">
-  <!-- Custom futuristic Solis Research lab rat hero image -->
-  <img src="rat.png" class="rat" alt="Solis Research Lab Rat">
-</div>
+<!-- RAT IMAGE (MAKE SURE FILE EXISTS) -->
+<img src="rat.png" class="rat" alt="Solis Research Lab Rat">
 
-<style>
-.rat{
-  width:260px;
-  border-radius:12px;
-  animation: float 3s ease-in-out infinite;
-  box-shadow:0 15px 35px rgba(0,0,0,0.15);
-}
-
-@keyframes float{
-  0%{transform:translateY(0px)}
-  50%{transform:translateY(-12px)}
-  100%{transform:translateY(0px)}
-}
-</style>
 </section>
 
 </body>
