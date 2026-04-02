@@ -1,93 +1,61 @@
-<!-- ===================== INDEX (Home Page) ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Solis Research</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {margin:0;font-family:Arial, sans-serif;background:#0a0a0a;color:white;}
-    nav {display:flex;justify-content:space-between;padding:20px;background:black;}
-    nav a {color:white;margin:0 15px;text-decoration:none;}
-    .hero {height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#000,#001f4d);} 
-    .hero h1 {font-size:48px;color:#00aaff;}
-    .hero p {max-width:600px;margin:20px;}
-    .btn {background:#00aaff;color:white;padding:12px 25px;border:none;border-radius:5px;text-decoration:none;}
-    .disclaimer {background:#111;padding:15px;text-align:center;font-size:12px;border-top:1px solid #00aaff;}
-    footer {text-align:center;padding:20px;background:black;margin-top:40px;}
-  </style>
+<meta charset="UTF-8">
+<title>Products - Solis Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {margin:0;font-family:Arial;background:white;color:black;}
+nav {display:flex;justify-content:space-between;padding:20px;background:white;border-bottom:1px solid #ddd;}
+nav a {color:black;margin:0 15px;text-decoration:none;font-weight:500;}
+
+.logo {display:flex;align-items:center;gap:10px;}
+.logo svg {width:32px;height:32px;}
+
+.grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.card {
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+border:1px solid #eee;
+}
+
+.card h3 {color:#0077ff;margin-bottom:10px;}
+.price {font-weight:bold;margin:10px 0;}
+.small {font-size:12px;color:#666;}
+
+.disclaimer {
+text-align:center;
+padding:20px;
+font-size:12px;
+color:#555;
+border-top:1px solid #ddd;
+}
+</style>
 </head>
+
 <body>
 
 <nav>
-  <div style="display:flex;align-items:center;gap:10px;">
-      <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- DNA Helix Style Logo -->
-        <path d="M30 10 C 60 30, 40 70, 70 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <path d="M70 10 C 40 30, 60 70, 30 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <line x1="40" y1="30" x2="60" y2="30" stroke="#00aaff" stroke-width="2" />
-        <line x1="38" y1="50" x2="62" y2="50" stroke="#00aaff" stroke-width="2" />
-        <line x1="40" y1="70" x2="60" y2="70" stroke="#00aaff" stroke-width="2" />
-      </svg>
-      <strong style="color:#00aaff;">Solis Research</strong>
-    </div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+  <div class="logo">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="20" stroke="#0077ff" stroke-width="3" fill="none"/>
+      <line x1="50" y1="10" x2="50" y2="30" stroke="#0077ff"/>
+      <line x1="50" y1="70" x2="50" y2="90" stroke="#0077ff"/>
+      <line x1="10" y1="50" x2="30" y2="50" stroke="#0077ff"/>
+      <line x1="70" y1="50" x2="90" y2="50" stroke="#0077ff"/>
+    </svg>
+    <strong>Solis Research</strong>
   </div>
-</nav>
 
-<section class="hero">
-  <h1>Precision Peptides. Elevated Research.</h1>
-  <p>High-purity compounds designed strictly for laboratory and research applications.</p>
-  <a class="btn" href="products.html">Browse Products</a>
-</section>
-
-<div class="disclaimer">
-  ALL PRODUCTS ARE INTENDED FOR RESEARCH PURPOSES ONLY. NOT FOR HUMAN OR ANIMAL CONSUMPTION.
-</div>
-
-<footer>
-  © 2026 Solis Research
-</footer>
-
-</body>
-</html>
-
-
-<!-- ===================== PRODUCTS PAGE ===================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Products - Solis Research</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {margin:0;font-family:Arial;background:#111;color:white;}
-    nav {display:flex;justify-content:space-between;padding:20px;background:black;}
-    nav a {color:white;margin:0 15px;text-decoration:none;}
-    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px;}
-    .card {background:#1a1a1a;padding:20px;border-radius:10px;border:1px solid #00aaff;}
-    .card h3 {color:#00aaff;}
-    .card p {font-size:12px;color:#ccc;margin-top:10px;}
-    .disclaimer {background:#000;padding:15px;text-align:center;font-size:12px;border-top:1px solid #00aaff;}
-  </style>
-</head>
-<body>
-
-<nav>
-  <div style="display:flex;align-items:center;gap:10px;">
-      <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- DNA Helix Style Logo -->
-        <path d="M30 10 C 60 30, 40 70, 70 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <path d="M70 10 C 40 30, 60 70, 30 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <line x1="40" y1="30" x2="60" y2="30" stroke="#00aaff" stroke-width="2" />
-        <line x1="38" y1="50" x2="62" y2="50" stroke="#00aaff" stroke-width="2" />
-        <line x1="40" y1="70" x2="60" y2="70" stroke="#00aaff" stroke-width="2" />
-      </svg>
-      <strong style="color:#00aaff;">Solis Research</strong>
-    </div>
   <div>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
@@ -96,72 +64,83 @@
 </nav>
 
 <section class="grid">
-  <div class="card"><h3>Retatrutide</h3><p>Research use only</p></div>
-  <div class="card"><h3>BPC-157</h3><p>Research use only</p></div>
-  <div class="card"><h3>TB-500</h3><p>Research use only</p></div>
-  <div class="card"><h3>BAC Water</h3><p>Research use only</p></div>
-  <div class="card"><h3>GHK-Cu</h3><p>Research use only</p></div>
-  <div class="card"><h3>HCG</h3><p>Research use only</p></div>
-  <div class="card"><h3>Glow</h3><p>Research use only</p></div>
-  <div class="card"><h3>Tesamorelin</h3><p>Research use only</p></div>
-  <div class="card"><h3>NAD+</h3><p>Research use only</p></div>
-  <div class="card"><h3>CJC-1295</h3><p>Research use only</p></div>
-  <div class="card"><h3>Semax</h3><p>Research use only</p></div>
-  <div class="card"><h3>MT-2</h3><p>Research use only</p></div>
+
+<div class="card">
+<h3>Retatrutide</h3>
+<div class="price">$120 – $300</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>BPC-157</h3>
+<div class="price">$60 – $150</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>TB-500</h3>
+<div class="price">$80 – $180</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>BAC Water</h3>
+<div class="price">$10 – $25</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>GHK-Cu</h3>
+<div class="price">$50 – $120</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>HCG</h3>
+<div class="price">$40 – $120</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>Glow Blend</h3>
+<div class="price">$80 – $160</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>Tesamorelin</h3>
+<div class="price">$120 – $250</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>NAD+</h3>
+<div class="price">$90 – $200</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>CJC-1295</h3>
+<div class="price">$90 – $180</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>Semax</h3>
+<div class="price">$50 – $120</div>
+<p class="small">Research use only</p>
+</div>
+
+<div class="card">
+<h3>MT-2</h3>
+<div class="price">$40 – $100</div>
+<p class="small">Research use only</p>
+</div>
+
 </section>
 
 <div class="disclaimer">
-  DISCLAIMER: These products are sold strictly for laboratory research purposes only. They are not intended for human or animal consumption, medical, diagnostic, or therapeutic use.
-</div>
-
-</body>
-</html>
-
-
-<!-- ===================== CONTACT PAGE ===================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact - Solis Research</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {margin:0;font-family:Arial;background:#0a0a0a;color:white;text-align:center;}
-    nav {display:flex;justify-content:space-between;padding:20px;background:black;}
-    nav a {color:white;margin:0 15px;text-decoration:none;}
-    .container {margin-top:100px;}
-    h1 {color:#00aaff;}
-    .disclaimer {margin-top:60px;font-size:12px;color:#aaa;}
-  </style>
-</head>
-<body>
-
-<nav>
-  <div style="display:flex;align-items:center;gap:10px;">
-      <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- DNA Helix Style Logo -->
-        <path d="M30 10 C 60 30, 40 70, 70 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <path d="M70 10 C 40 30, 60 70, 30 90" stroke="#00aaff" stroke-width="3" fill="none" />
-        <line x1="40" y1="30" x2="60" y2="30" stroke="#00aaff" stroke-width="2" />
-        <line x1="38" y1="50" x2="62" y2="50" stroke="#00aaff" stroke-width="2" />
-        <line x1="40" y1="70" x2="60" y2="70" stroke="#00aaff" stroke-width="2" />
-      </svg>
-      <strong style="color:#00aaff;">Solis Research</strong>
-    </div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-
-<div class="container">
-  <h1>Contact Us</h1>
-  <p>Email: sales@solisresearch.com</p>
-
-  <div class="disclaimer">
-    All inquiries and products are strictly for research purposes only.
-  </div>
+ALL PRODUCTS ARE FOR LABORATORY RESEARCH PURPOSES ONLY. NOT FOR HUMAN OR ANIMAL CONSUMPTION.
 </div>
 
 </body>
