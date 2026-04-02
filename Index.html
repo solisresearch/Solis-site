@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solis Research</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
 
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-10 py-6 border-b border-gray-200">
+    <h1 class="text-2xl font-bold tracking-wide text-red-600">SOLIS RESEARCH</h1>
+    <div class="space-x-8 text-sm font-semibold uppercase tracking-wider">
+      <a href="#products" class="hover:text-red-600">Shop</a>
+      <a href="#about" class="hover:text-red-600">Science</a>
+      <a href="#contact" class="hover:text-red-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="py-24 px-10 text-center">
+    <h2 class="text-5xl font-bold mb-6">Elite Research Compounds</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">Engineered for precision, verified for purity.</p>
+  </section>
+
+  <!-- PRODUCT PAGE (EXAMPLE: RETATRUTIDE) -->
+  <section class="px-10 py-20 grid md:grid-cols-2 gap-16 items-start border-t">
+
+    <!-- Left: Visual -->
+    <div class="bg-gray-100 rounded-3xl h-[500px] flex items-center justify-center text-gray-400 text-lg">
+      Product Image (Vial Mockup)
+    </div>
+
+    <!-- Right: Info -->
+    <div>
+      <h3 class="text-4xl font-bold mb-4">Retatrutide</h3>
+      <p class="text-gray-500 mb-6">Triple agonist peptide researched for metabolic regulation pathways.</p>
+
+      <div class="flex items-center gap-6 mb-6">
+        <span class="text-3xl font-bold">$149.99</span>
+        <span class="text-sm text-green-600 font-semibold">In Stock</span>
+      </div>
+
+      <button class="w-full py-4 bg-red-600 text-white rounded-2xl font-semibold hover:bg-red-700 transition mb-4">
+        Add to Cart
+      </button>
+
+      <button class="w-full py-4 border rounded-2xl font-semibold">
+        View Lab Report (COA)
+      </button>
+
+      <!-- Key Specs -->
+      <div class="mt-10 grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <p class="text-gray-400">Purity</p>
+          <p class="font-semibold">≥99%</p>
+        </div>
+        <div>
+          <p class="text-gray-400">Form</p>
+          <p class="font-semibold">Lyophilized Powder</p>
+        </div>
+        <div>
+          <p class="text-gray-400">Verification</p>
+          <p class="font-semibold">3rd Party Tested</p>
+        </div>
+        <div>
+          <p class="text-gray-400">Storage</p>
+          <p class="font-semibold">Cold Storage Recommended</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SCIENCE / DETAILS -->
+  <section class="px-10 py-20 bg-gray-50">
+    <div class="max-w-4xl">
+      <h3 class="text-3xl font-bold mb-6">Research Overview</h3>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Retatrutide is currently being studied for its multi-receptor activity involving GLP-1, GIP, and glucagon pathways. Early research explores its role in metabolic efficiency and energy balance.
+      </p>
+
+      <h4 class="text-xl font-semibold mb-3">Applications Under Study</h4>
+      <ul class="list-disc ml-6 text-gray-600 space-y-2">
+        <li>Metabolic pathway regulation</li>
+        <li>Energy expenditure research</li>
+        <li>Body composition studies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TRUST / BADGES -->
+  <section class="px-10 py-20 text-center">
+    <h3 class="text-3xl font-bold mb-10">Quality Standards</h3>
+    <div class="grid md:grid-cols-3 gap-10 text-sm">
+      <div>
+        <p class="font-semibold mb-2">3rd Party Tested</p>
+        <p class="text-gray-500">Every batch independently verified</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">High Purity</p>
+        <p class="text-gray-500">Strict quality control standards</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Secure Packaging</p>
+        <p class="text-gray-500">Sealed and protected shipments</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="px-10 pb-20 text-center text-xs text-gray-500 max-w-3xl mx-auto">
+    All products are intended strictly for laboratory research use only. Not for human consumption.
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-10 border-t text-sm text-gray-500 flex justify-between">
+    <span>© 2026 Solis Research</span>
+    <span>For Research Use Only</span>
+  </footer>
+
+</body>
+</html>
