@@ -127,10 +127,24 @@ window.location.href='cart.html';
 <a class="btn" href="products.html">Explore Products</a>
 
 <div class="images">
-<img src="https://images.unsplash.com/photo-1602052577122-f73b9710adba">
-<img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b">
-<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67">
+  <!-- Custom futuristic Solis Research lab rat hero image -->
+  <img src="rat.png" class="rat" alt="Solis Research Lab Rat">
 </div>
+
+<style>
+.rat{
+  width:260px;
+  border-radius:12px;
+  animation: float 3s ease-in-out infinite;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+@keyframes float{
+  0%{transform:translateY(0px)}
+  50%{transform:translateY(-12px)}
+  100%{transform:translateY(0px)}
+}
+</style>
 </section>
 
 </body>
@@ -160,12 +174,7 @@ button{background:#0057ff;color:white;border:none;padding:10px;border-radius:6px
 </head>
 <body>
 <div class="grid">
-<div class="card">
-<img src="vials/bpc157.png" style="width:100%;border-radius:10px;margin-bottom:10px;">
-<h3>BPC-157</h3>
-<p>$90</p>
-<button onclick="addToCart('BPC-157',90)">Add</button>
-</div>
+<div class="card"><h3>BPC-157</h3><p>$90</p><button onclick="addToCart('BPC-157',90)">Add</button></div>
 <div class="card"><h3>TB-500</h3><p>$120</p><button onclick="addToCart('TB-500',120)">Add</button></div>
 </div>
 </body>
@@ -205,4 +214,3 @@ document.getElementById('total').innerText='Total: $'+total;
 <p>sales@solisresearch.com</p>
 </body>
 </html>
-
